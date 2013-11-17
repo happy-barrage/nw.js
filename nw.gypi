@@ -229,6 +229,8 @@
         'src/chrome_breakpad_client.cc',
         'src/chrome_breakpad_client.h',
         'src/chrome_breakpad_client_mac.mm',
+        'src/common/cancelable_task_tracker.cc',
+        'src/common/cancelable_task_tracker.h',
         'src/common/print_messages.cc',
         'src/common/print_messages.h',
         'src/common/shell_switches.cc',
