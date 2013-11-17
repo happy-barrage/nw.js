@@ -156,6 +156,8 @@
         'src/api/window/window.h',
         'src/browser/app_controller_mac.h',
         'src/browser/app_controller_mac.mm',
+        'src/browser/cancelable_request.cc',
+        'src/browser/cancelable_request.h',
         'src/browser/capture_page_helper.h',
         'src/browser/capture_page_helper.cc',
         'src/browser/color_chooser_gtk.cc',
