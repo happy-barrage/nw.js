@@ -690,7 +690,9 @@ void NativeWindowCocoa::SetResizable(bool resizable) {
 }
 
 void NativeWindowCocoa::SetAlwaysOnTop(bool top) {
-  [window() setLevel:(top ? NSFloatingWindowLevel : NSNormalWindowLevel)];
+  //这里做一个调整，因为NSFloatingWindowLevel这个level是不能覆盖掉keynote全屏啊，视频全屏啊这些的
+  //所以修改成NSStatusWindowLevel这个就可以的
+  [window() setLevel:(top ? NSStatusWindowLevel : NSNormalWindowLevel)];
 }
 
 void NativeWindowCocoa::SetVisibleOnAllWorkspaces(bool all_workspaces) {
